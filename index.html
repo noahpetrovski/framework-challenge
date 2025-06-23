@@ -1,19 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="screen.css">
-  </head>
-  <body>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VR Therapy Info Board</title>
+  <link rel="stylesheet" href="https://edwardtufte.github.io/tufte-css/tufte.css">
+  <style>
+    body {
+      padding: 2rem;
+    }
+    header, main, footer {
+      margin-bottom: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to VR Therapy</h1>
+    <p class="subtitle">Enhancing healing through immersive technology</p>
+  </header>
+
+  <main>
+    <h2>About Your Therapist</h2>
+    <p>Hi, I'm Dr. Alex Rivera, a licensed clinical therapist using virtual reality to help clients manage anxiety, PTSD, and phobias through immersive exposure therapy and relaxation environments.</p>
+
+    <h2>How VR Therapy Works</h2>
+    <ul>
+      <li>Clients wear a VR headset in a safe, private setting</li>
+      <li>We simulate environments tailored to your therapy goals</li>
+      <li>Real-time feedback and voice guidance are included</li>
+    </ul>
+
+    <h2>Benefits</h2>
+    <p>VR Therapy offers a new way to confront fears, reduce stress, and explore mindfulness in a controlled, interactive space.</p>
+
+    <h2>Session Info</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Session</th>
+          <th>Duration</th>
+          <th>Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Intro to VR Therapy</td>
+          <td>30 minutes</td>
+          <td>$25</td>
+        </tr>
+        <tr>
+          <td>Full Session</td>
+          <td>60 minutes</td>
+          <td>$60</td>
+        </tr>
+        <tr>
+          <td>Weekly Package</td>
+          <td>4x 60 minutes</td>
+          <td>$200</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Book a Session</h2>
+    <form>
+      <p><label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"></p>
+
+      <p><label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"></p>
+
+      <p><label for="reason">Session Type:</label><br>
+      <select id="reason" name="reason">
+        <option value="intro">Intro to VR Therapy</option>
+        <option value="full">Full Session</option>
+        <option value="package">Weekly Package</option>
+      </select></p>
+
+      <p><label for="message">Message:</label><br>
+      <textarea id="message" name="message"></textarea></p>
+
+      <p><button type="submit">Request Appointment</button></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 VR Therapy - Dr. Alex Rivera</p>
+  </footer>
+
+</body>
 </html>
+
